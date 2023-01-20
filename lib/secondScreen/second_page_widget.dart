@@ -21,11 +21,11 @@ class SecondPage extends StatelessWidget {
             return AnimatedContainer(
               curve: Curves.ease,
               height: state.toDouble(),
-              duration: const Duration(seconds: 1),
+              duration: const Duration(seconds: 0),
               child: ClipRect(
                 child: Wrap(
                   children: [
-                    TileLocationOfOzon(heightSize: state.toDouble()),
+                    TileLocationOfOzon(),
                   ],
                 ),
               ),

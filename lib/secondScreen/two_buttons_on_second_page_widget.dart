@@ -6,7 +6,7 @@ class TwoButtonsOnSecondPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
+      padding: EdgeInsets.fromLTRB(20, 5, 20, 0),
       child: Container(
           width: 550,
           height: 45,

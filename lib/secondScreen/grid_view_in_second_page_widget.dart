@@ -39,7 +39,7 @@ import 'two_buttons_on_second_page_widget.dart';
       height: MediaQuery.of(context).size.height -
           180 -
           kBottomNavigationBarHeight, //564 kBottomNavigationBarHeight
-      padding: const EdgeInsets.fromLTRB(15, 10, 15, 2),
+      padding: const EdgeInsets.fromLTRB(15, 5, 15, 2),
       child: GridView.builder(
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           childAspectRatio: 0.8,

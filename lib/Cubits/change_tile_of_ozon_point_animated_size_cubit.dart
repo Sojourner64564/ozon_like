@@ -6,6 +6,10 @@ class ChangeTileOfOzonPointAnimatedSize extends Cubit<int>{
     if(chislo<64)
     emit(64-chislo.toInt());
 
+    if(chislo>64)
+      emit(0);
+
+
   }
 
 }

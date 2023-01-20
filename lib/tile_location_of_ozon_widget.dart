@@ -3,19 +3,14 @@ import 'package:flutter/material.dart';
 class TileLocationOfOzon extends StatelessWidget {
   TileLocationOfOzon({
     Key? key,
-    heightSize,
   });
-  double? heightSize;
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: heightSize,
-      child: Column(
+    return Column(
         children: [
           Row(
             children: [
-               FlutterLogo(size: heightSize),
               const SizedBox(
                 width: 15,
               ),
@@ -35,11 +30,11 @@ class TileLocationOfOzon extends StatelessWidget {
             ],
           ),
           const Divider(
+            height:1,
             color: Colors.grey,
             thickness: 0.3,
           ),
         ],
-      ),
     ); //
   }
 }
