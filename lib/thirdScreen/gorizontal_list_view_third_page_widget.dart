@@ -10,7 +10,7 @@ class GorizontalListViewThirdPage extends StatelessWidget{
       width: 400,
       child: ListView.separated(
         scrollDirection: Axis.horizontal,
-        padding: const EdgeInsets.fromLTRB(10, 5, 10, 15),
+        padding: const EdgeInsets.fromLTRB(10, 5, 10, 10),
         itemCount: 2,
         itemBuilder: (BuildContext context, int index){
           return ImgListViewGorizontalMainPage();

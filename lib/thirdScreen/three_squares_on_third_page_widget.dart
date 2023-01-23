@@ -8,45 +8,57 @@ class ThreeSquaresOnThirdPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      scrollDirection: Axis.horizontal,
-      shrinkWrap: true,
-
-      itemCount: 2,
-    itemBuilder: (BuildContext context, int index){
-      final item = buttons[index];
-      return GestureDetector(
-      onTap: item.onPressed,
-      child: Container(
-        padding: EdgeInsets.fromLTRB(5, 5, 5, 2),
-        decoration: BoxDecoration(
-          color: Color.fromRGBO(60, 60, 67, 10.0),
-          borderRadius: BorderRadius.circular(15),
+    return Container(
+      width: double.infinity,
+      height: 260,
+      padding: const EdgeInsets.fromLTRB(15, 5, 15, 2),
+      child: GridView.builder(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          childAspectRatio: 0.8,
+          crossAxisSpacing: 10,
+          crossAxisCount: 3,
+          mainAxisSpacing: 10,
         ),
-        alignment: Alignment.center,
-        child: Column(
-          children: [
-            ClipRRect(
-              borderRadius: BorderRadius.circular(10.0),
-              child: Image.network(
-                item.url,
-                fit: BoxFit.cover,
-                width: 100,
-                height: 100,
+        scrollDirection: Axis.vertical,
+        shrinkWrap: true,
+        itemCount: 3,
+        itemBuilder: (BuildContext context, int index) {
+          final item = buttons[index];
+          return GestureDetector(
+            onTap: item.onPressed,
+            child: Container(
+              //width: 80,
+              //height: 120,
+              padding: EdgeInsets.fromLTRB(5, 5, 5, 2),
+              decoration: BoxDecoration(
+                color: Color.fromRGBO(60, 60, 67, 10.0),
+                borderRadius: BorderRadius.circular(15),
+              ),
+              alignment: Alignment.center,
+              child: Column(
+                children: [
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(10.0),
+                    child: Image.network(
+                      item.url,
+                      fit: BoxFit.cover,
+                      width: 100,
+                      height: 100,
+                    ),
+                  ),
+                  Text(
+                    item.text,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 12,
+                    ),
+                  ),
+                ],
               ),
             ),
-              Text( item.text,
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 12,
-              ),
-            ),
-          ],
-        ),
+          );
+        },
       ),
-    );
-
-    },
     );
   }
 }
