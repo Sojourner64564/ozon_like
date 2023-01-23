@@ -9,7 +9,7 @@ class ImgListViewGorizontalMainPage extends StatelessWidget {
           color: Colors.green,
           borderRadius: BorderRadius.circular(10),
         ),
-        width: 300,
+        width: 370,
         child: ClipRRect(
           borderRadius: BorderRadius.circular(10.0),
           child: Image.network(

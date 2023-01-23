@@ -4,6 +4,7 @@ import 'bottombar_buttons_list_veiw_widget.dart';
 import 'main.dart';
 import 'Classes/my_button_class.dart';
 import 'secondScreen/second_screen.dart';
+import 'thirdScreen/thirdScreen.dart';
 
 class BottomNavigatorBar extends StatelessWidget {
   const BottomNavigatorBar({
@@ -36,7 +37,15 @@ class BottomNavigatorBar extends StatelessWidget {
                 );
               }),
           MyButtonsClass(icon: Icons.play_arrow_outlined, onPressed: () {}),
-          MyButtonsClass(icon: Icons.domain_add_outlined, onPressed: () {}),
+          MyButtonsClass(
+            icon: Icons.domain_add_outlined,
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const ThirdScreen()),
+              );
+            },
+          ),
           MyButtonsClass(icon: Icons.shopping_bag_outlined, onPressed: () {}),
           MyButtonsClass(icon: Icons.face_outlined, onPressed: () {}),
         ],

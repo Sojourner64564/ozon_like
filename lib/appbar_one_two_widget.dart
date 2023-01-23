@@ -11,7 +11,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget{
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: Colors.black87,
+      backgroundColor: const Color.fromRGBO(15, 15, 25, 40.0),
       leading: Container(
         width: 100,
         child: IconButton(

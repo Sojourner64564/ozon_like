@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class TitleOfAppbarOneTwo extends StatelessWidget {
-  const TitleOfAppbarOneTwo({Key? key,});
+class TitleOfAppbarThird extends StatelessWidget {
+  const TitleOfAppbarThird({Key? key,});
 
 
   @override
@@ -30,15 +30,10 @@ class TitleOfAppbarOneTwo extends StatelessWidget {
             ),
           ),
           SizedBox(
-            width: 30,
+            width: 40,
             child:
-            IconButton(onPressed: () {}, icon: const Icon(Icons.mic)),
-          ),
-          SizedBox(
-            width: 45,
-            child: IconButton(
-                onPressed: () {},
-                icon: const Icon(Icons.center_focus_weak)),
+                  IconButton(onPressed: () {}, icon: const Icon(Icons.mic_none)),
+
           ),
         ],
       ),

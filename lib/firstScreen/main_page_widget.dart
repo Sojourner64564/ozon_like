@@ -10,7 +10,6 @@ class MainPage extends StatelessWidget{
     return Column(children: [
        TileLocationOfOzon(),
       const GorizontalListViewMainPage(),
-
     ],
     );
 
