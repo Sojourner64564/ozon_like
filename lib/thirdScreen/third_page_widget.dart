@@ -14,7 +14,7 @@ class ThirdPage extends StatelessWidget{
       ThreeButtonsOnThirdPage(),
       SizedBox(height: 10),
       GorizontalListViewThirdPage(),
-      //SizedBox(height: 5),
+      SizedBox(height: 15),
       ThreeSquaresOnThirdPage(buttons:[
         MySquaresButtonsThirdPage(text: "Одежда", onPressed: (){}),
         MySquaresButtonsThirdPage(text: "Обувь", onPressed: (){}),

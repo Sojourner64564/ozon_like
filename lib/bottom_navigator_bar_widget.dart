@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'Cubits/change_tile_of_ozon_point_animated_size_cubit.dart';
 import 'bottombar_buttons_list_veiw_widget.dart';
+import 'fourScreen/fourScreen.dart';
 import 'main.dart';
 import 'Classes/my_button_class.dart';
 import 'secondScreen/second_screen.dart';
@@ -47,7 +47,14 @@ class BottomNavigatorBar extends StatelessWidget {
             },
           ),
           MyButtonsClass(icon: Icons.shopping_bag_outlined, onPressed: () {}),
-          MyButtonsClass(icon: Icons.face_outlined, onPressed: () {}),
+          MyButtonsClass(
+              icon: Icons.face_outlined,
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const FourScreen()),
+                );
+              }),
         ],
       ),
     );

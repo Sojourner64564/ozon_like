@@ -11,7 +11,7 @@ class ThreeSquaresOnThirdPage extends StatelessWidget {
     return Container(
       width: double.infinity,
       height: 260,
-      padding: const EdgeInsets.fromLTRB(15, 5, 15, 2),
+      padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),
       child: GridView.builder(
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           childAspectRatio: 0.8,
