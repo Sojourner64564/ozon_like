@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../Classes/sqr_buttons_four_page_class.dart';
 import 'avatar_name_four_page_widget.dart';
+import 'finance_squares_buttons_profile_widget.dart';
 import 'square_buttons_four_page_widget.dart';
 
 
@@ -13,6 +14,7 @@ class FourPage extends StatelessWidget{
     return ListView(children: [
       SizedBox(height: 20),
       AvatarNameFourPage(),
+      SizedBox(height: 5),
       SquareButtonsFourPage(sqrButtonsFourPage: [
         SqrButtonsFourPage(icon:Icons.ac_unit, upperText:"Избранное", bottomText:"0 товаров", onPressed:(){}),
         SqrButtonsFourPage(icon:Icons.ac_unit, upperText:"Баллы за отзывы", bottomText:"Нет товаров", onPressed:(){}),
@@ -25,7 +27,10 @@ class FourPage extends StatelessWidget{
         SqrButtonsFourPage(icon:Icons.ac_unit, upperText:"Опросы", bottomText:"о работе Ozon", onPressed:(){}),
         SqrButtonsFourPage(icon:Icons.ac_unit, upperText:"ozon забота", bottomText:"Соцпроект", onPressed:(){}),
       ],),
-      
+      SizedBox(height: 10),
+      FinanceSquaresButtonsProfile(),
+
+
     ],
     );
 
