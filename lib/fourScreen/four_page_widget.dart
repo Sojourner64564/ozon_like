@@ -17,7 +17,10 @@ class FourPage extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    return ListView(children: [
+    return Container(
+      width: double.infinity,
+      height: double.infinity,
+      child: ListView(children: [
       SizedBox(height: 20),
       AvatarNameFourPage(),
       SizedBox(height: 5),
@@ -59,7 +62,7 @@ class FourPage extends StatelessWidget{
       ],)
 
     ],
-    );
+    ),);
 
   }
 
