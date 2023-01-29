@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import '../Cubits/change_tile_of_ozon_point_animated_size_cubit.dart';
-import 'two_buttons_on_second_page_widget.dart';
 
 
 
@@ -78,17 +76,6 @@ import 'two_buttons_on_second_page_widget.dart';
                       color: Colors.white,
                       fontSize: 12,
                     ),
-                  ),
-                  BlocBuilder<ChangeTileOfOzonPointAnimatedSize, int>(
-                    bloc: widget.changeTileOfOzonPointAnimatedSize,
-                    builder: (context, state) {
-                      return Container(
-                        width: double.infinity,
-                        height: 30,
-                        color: Colors.green,
-                        child: Text(state.toString()),
-                      );
-                    },
                   ),
                 ],
               ),
