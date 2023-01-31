@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../Classes/purchases_list_four_class.dart';
 
 class PurchasesFourPage extends StatelessWidget {

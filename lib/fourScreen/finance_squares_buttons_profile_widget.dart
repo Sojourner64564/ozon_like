@@ -106,9 +106,8 @@ class FinanceSquaresButtonsProfile extends StatelessWidget {
             ),
             const SizedBox(height: 10),
             Container(
-              width: double.infinity,
-              child: Expanded(
-                child: Container(
+              width: double.infinity, // тут был експандед
+              child: Container(
                   height: 60,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
@@ -158,7 +157,7 @@ class FinanceSquaresButtonsProfile extends StatelessWidget {
                   ),
                 ),
               ),
-            ),
+           // ),
           ],
         ),
       ),

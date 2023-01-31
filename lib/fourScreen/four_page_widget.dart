@@ -38,6 +38,7 @@ class FourPage extends StatelessWidget{
       ],),
       SizedBox(height: 10),
       FinanceSquaresButtonsProfile(),
+
       PurchasesFourPage(purchasesListFour:[
         PurchasesListFour(text:"Заказы", onPressed: (){}),
         PurchasesListFour(text:"Возвраты", onPressed: (){}),
@@ -58,11 +59,11 @@ class FourPage extends StatelessWidget{
         AppListFour(text:'Цвет приложения', onPressed: (){}),
         AppListFour(text:'О приложении', onPressed: (){}),
         AppListFour(text:'Помощь', onPressed: (){}),
-
       ],)
 
     ],
-    ),);
+    ),
+    );
 
   }
 
