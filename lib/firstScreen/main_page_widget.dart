@@ -9,7 +9,8 @@ class MainPage extends StatelessWidget{
   Widget build(BuildContext context) {
     return Column(children: [
        TileLocationOfOzon(),
-      const GorizontalListViewMainPage(),
+      const SizedBox(height: 5),
+      GorizontalListViewMainPage(),
     ],
     );
 

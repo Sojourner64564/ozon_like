@@ -21,9 +21,9 @@ class FourPage extends StatelessWidget{
       width: double.infinity,
       height: double.infinity,
       child: ListView(children: [
-      SizedBox(height: 20),
-      AvatarNameFourPage(),
-      SizedBox(height: 5),
+        const SizedBox(height: 20),
+        const AvatarNameFourPage(),
+        const SizedBox(height: 5),
       SquareButtonsFourPage(sqrButtonsFourPage: [
         SqrButtonsFourPage(icon:Icons.ac_unit, upperText:"Избранное", bottomText:"0 товаров", onPressed:(){}),
         SqrButtonsFourPage(icon:Icons.ac_unit, upperText:"Баллы за отзывы", bottomText:"Нет товаров", onPressed:(){}),
@@ -36,8 +36,8 @@ class FourPage extends StatelessWidget{
         SqrButtonsFourPage(icon:Icons.ac_unit, upperText:"Опросы", bottomText:"о работе Ozon", onPressed:(){}),
         SqrButtonsFourPage(icon:Icons.ac_unit, upperText:"ozon забота", bottomText:"Соцпроект", onPressed:(){}),
       ],),
-      SizedBox(height: 10),
-      FinanceSquaresButtonsProfile(),
+        const SizedBox(height: 10),
+        const  FinanceSquaresButtonsProfile(),
 
       PurchasesFourPage(purchasesListFour:[
         PurchasesListFour(text:"Заказы", onPressed: (){}),

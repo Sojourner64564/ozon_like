@@ -13,10 +13,10 @@ class GorizontalListViewThirdPage extends StatelessWidget{
         padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
         itemCount: 2,
         itemBuilder: (BuildContext context, int index){
-          return ImgListViewGorizontalMainPage();
+          return const ImgListViewGorizontalMainPage();
 
         },
-        separatorBuilder: (BuildContext context, int index) { return SizedBox(width: 20,); },
+        separatorBuilder: (BuildContext context, int index) { return const SizedBox(width: 20,); },
       ),
     );
 

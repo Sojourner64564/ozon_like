@@ -21,7 +21,7 @@ class SecondPage extends StatelessWidget {
             return AnimatedContainer(
               curve: Curves.ease,
               height: state.toDouble(),
-              duration: const Duration(seconds: 0),
+              duration: const Duration(seconds: 0, milliseconds: 80),
               child: ClipRect(
                 child: Wrap(
                   children: [

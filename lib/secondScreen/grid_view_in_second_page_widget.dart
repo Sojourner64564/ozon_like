@@ -7,6 +7,7 @@ import '../Cubits/change_tile_of_ozon_point_animated_size_cubit.dart';
    GridVeiwInSecondPage({ super.key,
    required this.changeTileOfOzonPointAnimatedSize,
    });
+
   final _controller = ScrollController();
   final ChangeTileOfOzonPointAnimatedSize changeTileOfOzonPointAnimatedSize;
   void activateCounterOfPixelsOfGridVeiw() {
@@ -53,9 +54,9 @@ import '../Cubits/change_tile_of_ozon_point_animated_size_cubit.dart';
           return GestureDetector(
             onTap: () {},
             child: Container(
-              padding: EdgeInsets.fromLTRB(5, 5, 5, 2),
+              padding: const EdgeInsets.fromLTRB(5, 5, 5, 2),
               decoration: BoxDecoration(
-                color: Color.fromRGBO(60, 60, 67, 10.0),
+                color: const Color.fromRGBO(60, 60, 67, 10.0),
                 borderRadius: BorderRadius.circular(15),
               ),
               alignment: Alignment.center,

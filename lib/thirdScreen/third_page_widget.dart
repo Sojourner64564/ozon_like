@@ -6,15 +6,15 @@ import 'three_squares_on_third_page_widget.dart';
 
 
 class ThirdPage extends StatelessWidget{
-  const ThirdPage({Key? key});
+  const ThirdPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Column(children: [
-      ThreeButtonsOnThirdPage(),
-      SizedBox(height: 10),
-      GorizontalListViewThirdPage(),
-      SizedBox(height: 15),
+      const ThreeButtonsOnThirdPage(),
+      const SizedBox(height: 10),
+      const GorizontalListViewThirdPage(),
+      const SizedBox(height: 15),
       ThreeSquaresOnThirdPage(buttons:[
         MySquaresButtonsThirdPage(text: "Одежда", onPressed: (){}),
         MySquaresButtonsThirdPage(text: "Обувь", onPressed: (){}),

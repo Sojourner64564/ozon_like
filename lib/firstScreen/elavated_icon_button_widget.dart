@@ -13,7 +13,7 @@ class ElavatedIconButton extends StatelessWidget {
         IconButton(
       onPressed: () {},
       color: Colors.white,
-      icon: Icon(Icons.confirmation_num_sharp),
+      icon: const Icon(Icons.confirmation_num_sharp),
     ),);
   }
 }

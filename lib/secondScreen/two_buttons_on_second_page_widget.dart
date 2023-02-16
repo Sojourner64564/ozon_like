@@ -6,11 +6,11 @@ class TwoButtonsOnSecondPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.fromLTRB(20, 5, 20, 0),
+      padding: const EdgeInsets.fromLTRB(20, 5, 20, 0),
       child: Container(
           width: 550,
           height: 45,
-          padding: EdgeInsets.fromLTRB(2, 2, 2, 2),
+          padding: const EdgeInsets.fromLTRB(2, 2, 2, 2),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
             color: Colors.black,
@@ -24,14 +24,14 @@ class TwoButtonsOnSecondPage extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: () {},
                   style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(31, 32, 40, 10.0)),
+                    backgroundColor: MaterialStateProperty.all<Color>(const Color.fromRGBO(31, 32, 40, 10.0)),
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10.0),
                       ),
                     ),
                   ),
-                  child: Text("Каталог"),
+                  child: const Text("Каталог"),
                 ),
               ),
               SizedBox(
@@ -40,14 +40,14 @@ class TwoButtonsOnSecondPage extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: () {},
                   style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(31, 32, 40, 10.0)),
+                    backgroundColor: MaterialStateProperty.all<Color>(const Color.fromRGBO(31, 32, 40, 10.0)),
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10.0),
                       ),
                     ),
                   ),
-                  child: Text("Весь Ozon"),
+                  child: const Text("Весь Ozon"),
                 ),
               ),
             ],

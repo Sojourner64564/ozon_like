@@ -37,8 +37,8 @@ class AvatarNameFourPage extends StatelessWidget {
               ),
             ],
           ),
-          Expanded(child: SizedBox()),
-          Icon(Icons.chevron_right,
+          const Expanded(child: SizedBox()),
+          const Icon(Icons.chevron_right,
           color: Colors.grey,
           )
           

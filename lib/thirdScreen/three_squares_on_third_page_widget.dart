@@ -29,9 +29,9 @@ class ThreeSquaresOnThirdPage extends StatelessWidget {
             child: Container(
               //width: 80,
               //height: 120,
-              padding: EdgeInsets.fromLTRB(5, 5, 5, 2),
+              padding: const EdgeInsets.fromLTRB(5, 5, 5, 2),
               decoration: BoxDecoration(
-                color: Color.fromRGBO(60, 60, 67, 10.0),
+                color: const Color.fromRGBO(60, 60, 67, 10.0),
                 borderRadius: BorderRadius.circular(15),
               ),
               alignment: Alignment.center,
@@ -48,7 +48,7 @@ class ThreeSquaresOnThirdPage extends StatelessWidget {
                   ),
                   Text(
                     item.text,
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: Colors.white,
                       fontSize: 12,
                     ),
