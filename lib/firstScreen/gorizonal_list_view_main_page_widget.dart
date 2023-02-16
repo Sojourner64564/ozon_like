@@ -1,70 +1,62 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:ozon_like/Cubits/first_page_page_indicator_cubit.dart';
 import 'img_list_view_gorizontal_main_page.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-class GorizontalListViewMainPage extends StatefulWidget {
-  GorizontalListViewMainPage();
-  final PageController pageController = PageController();
-  final FirstPageIndicator firstPageIndicator = FirstPageIndicator();
+class HorizontalPageViewMainPage extends StatefulWidget {
+  const HorizontalPageViewMainPage({super.key});
 
-  void goToListen() {
-    pageController.addListener(() {
-      debugPrint(pageController.page.toString()); //1174
-      debugPrint('fgfgf');
-      debugPrint(pageController.position.pixels.toString());
-      firstPageIndicator.goToPage(pageController.page);
-    });
-  }
 
   @override
-  State<GorizontalListViewMainPage> createState() =>
-      _GorizontalListViewMainPage();
+  State<HorizontalPageViewMainPage> createState() =>
+      _HorizontalPageViewMainPage();
 }
 
-class _GorizontalListViewMainPage extends State<GorizontalListViewMainPage> {
+class _HorizontalPageViewMainPage extends State<HorizontalPageViewMainPage> {
+final PageController pageController = PageController();
   @override
   void initState() {
     super.initState();
-    widget.goToListen();
   }
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 170,
       width: double.infinity,
-      padding: const EdgeInsets.symmetric(horizontal: 15),
       child: Stack(
         children: [
           PageView.builder(
             scrollDirection: Axis.horizontal,
-            controller: widget.pageController,
+            controller: pageController,
             itemCount: 4,
+            physics: const FixedExtentScrollPhysics(),
             itemBuilder: (BuildContext context, int index) {
               return const Padding(
-                padding: EdgeInsets.symmetric(horizontal: 5),
+                padding: EdgeInsets.symmetric(horizontal: 20),
                 child: ImgListViewGorizontalMainPage(),
               );
             },
           ),
-          BlocBuilder<FirstPageIndicator, double>(
-              bloc: FirstPageIndicator(),
-              builder: (context, state) {
-                return Column(
-                  children: [
-                    SmoothIndicator(
-                      offset: state,
-                      count: 4,
-                    ),
-                    Text(state.toString(),
-                   style: TextStyle(
-                     fontSize: 60,
-                   ), ),
-                  ],
-                );
-              }),
+          Positioned(
+            bottom: 10,
+            left: MediaQuery.of(context).size.width / 2 - 20.0,
+            child: Center(
+
+              child: SizedBox(
+                width: 10,
+                height: 15,
+                child: SmoothPageIndicator(
+                  count: 4,
+                  controller: pageController,
+                  effect: const WormEffect(
+                    dotHeight: 7,
+                    dotWidth: 7,
+                    dotColor: Colors.grey,
+                  ),
+                ),
+              ),
+            ),
+          )
         ],
       ),
     );
