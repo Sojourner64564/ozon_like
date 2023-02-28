@@ -15,7 +15,7 @@ class SecondScreen extends StatelessWidget {
       backgroundColor: colorScaffoldOneTwo,
       appBar: const MyAppBar(),
       body:   SecondPage(), //was const
-      bottomNavigationBar: const BottomNavigatorBar(),
+      //bottomNavigationBar: const BottomNavigatorBar(),
     );
   }
 }

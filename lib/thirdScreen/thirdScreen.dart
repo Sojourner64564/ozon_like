@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../bottom_navigator_bar_widget.dart';
 import 'third_page_app_bar_widget.dart';
 import 'third_page_widget.dart';
 
@@ -13,8 +12,7 @@ class ThirdScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: colorScaffoldOneTwo,
       appBar: const ThirdPageAppBar(),
-      body:   ThirdPage(), //was const
-      bottomNavigationBar: const BottomNavigatorBar(),
+      body:   ThirdPage(),
     );
   }
 }

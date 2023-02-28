@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import '../tile_location_of_ozon_widget.dart';
 import 'gorizonal_list_view_main_page_widget.dart';
 
-class MainPage extends StatelessWidget{
-  const MainPage({Key? key});
+class FirstScreen extends StatelessWidget{
+  const FirstScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {

@@ -15,7 +15,7 @@ class FourScreen extends StatelessWidget {
       backgroundColor: colorScaffoldOneTwo,
       appBar: const FourPageAppBar(),
       body:   FourPage(), //was const
-      bottomNavigationBar: const BottomNavigatorBar(),
+     // bottomNavigationBar: const BottomNavigatorBar(),
     );
   }
 }
